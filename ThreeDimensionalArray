@@ -1,0 +1,24 @@
+public class ThreeDimensionalArray {
+    public static void main(String a[]) {
+        int age[][][] = new int[3][4][5]; 
+        for (int i = 0; i < age.length; i++) { 
+            for (int j = 0; j < age[i].length; j++) { 
+                for (int k = 0; k < age[i][j].length; k++) { 
+                    age[i][j][k] = (int)(Math.random() * 10);
+                }
+            }
+        }
+        for (int i = 0; i < age.length; i++) {
+            for (int j = 0; j < age[i].length; j++) {
+                for (int k = 0; k < age[i][j].length; k++) {
+                    System.out.print(age[i][j][k] + " ");
+                }
+                System.out.println(); 
+            }
+            System.out.println("---"); 
+        }
+    }
+}
+
+    
+
